@@ -1,0 +1,27 @@
+---
+const { showBackArr } = Astro.props;
+---
+
+<nav>
+    <ul
+        class={`flex ${showBackArr ? "justify-between" : "justify-end"} space-x-4 lg:md:sm:px-12 px-2 pt-3 w-full`}
+    >
+        {
+            showBackArr && (
+                <li>
+                    <a href="/">&larr;</a>
+                </li>
+            )
+        }
+        <li>
+            <ul class="flex space-x-4">
+                <li>
+                    <a href="/privacy" class="hover:underline"> Privacy </a>
+                    <li>
+                        <a href="/support" class="hover:underline"> Support </a>
+                    </li>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

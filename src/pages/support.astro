@@ -1,0 +1,39 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <Navbar showBackArr={true} />
+    <section class="px-4 py-8 md:py-12 mx-auto max-w-3xl">
+        <h1 class="text-2xl font-bold mb-2">Support</h1>
+        <div class="space-y-8">
+            <div>
+                <p>
+                    We're here to help you with any questions or issues you
+                    might have with Kosm.
+                </p>
+                <p>
+                    Please email us at
+                    <a
+                        href="mailto:support@kosm.app"
+                        class="hover:underline font-semibold"
+                    >
+                        support@kosm.app
+                    </a>
+                    and we'll get back to you as soon as possible.
+                </p>
+            </div>
+        </div>
+        <br />
+        <div>
+            <h3 class="font-semibold mb-3">Quick Tips for Common Issues</h3>
+            <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                <li>Allow notifications for daily breathing reminders</li>
+                <li>Keep your app updated for the latest features</li>
+                <li>If you're having trouble, try restarting the app</li>
+                <li>Haptic feedback can be enabled/disabled in settings</li>
+            </ul>
+        </div>
+    </section>
+</Layout>
