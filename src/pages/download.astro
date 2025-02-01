@@ -8,6 +8,20 @@
     />
 </head>
 
-<body>
-    <p>Taking you to the App Store...</p>
+<body class="flex flex-col justify-center items-center h-screen">
+    <p>Taking you to the App Store</p>
+    <a
+        href="https://apps.apple.com/us/app/kosm-breathing-companion/id6739977352"
+        class="manual-redirect text-blue-500 hidden"
+        id="manual-redirect"
+    >
+        Click here if you are not automatically redirected
+    </a>
+
+    <script>
+        setTimeout(() => {
+            const element = document.getElementById("manual-redirect");
+            if (element) element.style.display = "block";
+        }, 5000);
+    </script>
 </body>
